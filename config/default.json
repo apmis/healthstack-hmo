@@ -1,0 +1,40 @@
+{
+    "host": "localhost",
+    "port": 3000,
+    "public": "../public/",
+    "paginate": {
+        "default": 10,
+        "max": 50
+    },
+    "authentication": {
+        "entity": "user",
+        "service": "users",
+        "secret": "zsvosNkbLMAOz/yJym7vxEPVYds=",
+        "authStrategies": [
+            "jwt",
+            "local"
+        ],
+        "jwtOptions": {
+            "header": {
+                "typ": "access"
+            },
+            "audience": "https://yourdomain.com",
+            "issuer": "feathers",
+            "algorithm": "HS256",
+            "expiresIn": "1d"
+        },
+        "local": {
+            "usernameField": "email",
+            "passwordField": "password"
+        },
+        "oauth": {
+            "redirect": "/",
+            "github": {
+                "key": "3be53741ecbd912ab3b3",
+                "secret": "82b98e3f83dc4c405233670ff676cf3cd460c2ab"
+            }
+        }
+    },
+    "nedb": "../data",
+    "mongoDBUrl": "mongodb://localhost:27017/feathers"
+}

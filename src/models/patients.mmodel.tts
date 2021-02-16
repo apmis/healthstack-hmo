@@ -1,0 +1,5 @@
+export default function (conn): any  {
+  const Model = conn.db('feathers').collection('patients');
+
+  return Model;
+}
