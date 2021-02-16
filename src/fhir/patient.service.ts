@@ -11,7 +11,6 @@ export const search = async (args, context) => {
   const query = {}; // myCustomQueryBuilder(args);
   let results: Dictionary[] = [];
   try {
-    console.log({ results });
     results = (await patientsService.find()) as Dictionary[];
     const patients = results['data'].map((result) => new Patient(result));
     const entries = patients.map(
@@ -19,6 +18,6 @@ export const search = async (args, context) => {
     );
     return new Bundle({ entry: entries });
   } catch (error) {
-    console.log({ error });
+    console.error({ error });
   }
 };
