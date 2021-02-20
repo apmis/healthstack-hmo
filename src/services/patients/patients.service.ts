@@ -1,10 +1,10 @@
 // Initializes the `messages` service on path `/messages`
 import { ServiceAddons } from '@feathersjs/feathers';
 
-import hooks from './patients.hook';
-import { Patients } from './patients.class';
-import { Application } from '../../declarations';
 import { ServiceNames } from '../../db';
+import { Application } from '../../declarations';
+import { Patients } from './patients.class';
+import hooks from './patients.hook';
 
 // Add this service to the service type index
 declare module '../../declarations' {

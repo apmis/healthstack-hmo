@@ -1,10 +1,10 @@
-import createModel from '../../models/patients.model';
-
-import { MongoDBServiceOptions, Service } from 'feathers-mongodb';
-import { Application } from '../../declarations';
-import { AppConstants } from '../../db';
-import { Params } from '@feathersjs/feathers';
 import { R4 } from '@ahryman40k/ts-fhir-types';
+import { Params } from '@feathersjs/feathers';
+import { MongoDBServiceOptions, Service } from 'feathers-mongodb';
+
+import { AppConstants } from '../../db';
+import { Application } from '../../declarations';
+import createModel from '../../models/patients.model';
 
 type Patient = R4.IPatient;
 export class Patients extends Service<Patient> {

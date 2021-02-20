@@ -1,6 +1,7 @@
 import { MongoClient } from 'mongodb';
-import { Application } from '../declarations';
+
 import { AppConstants } from '../constants';
+import { Application } from '../declarations';
 
 export default (app: Application): void => {
   const { MONGO_CLIENT, MONGODB_URL } = AppConstants;

@@ -1,4 +1,5 @@
 import { resolveSchema } from '@asymmetrik/node-fhir-server-core';
+
 import app from '../app';
 import { ServiceNames } from '../db';
 import { Dictionary } from '../types';

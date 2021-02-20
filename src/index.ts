@@ -1,11 +1,11 @@
 import {
+  constants,
   initialize,
   loggers,
-  constants,
 } from '@asymmetrik/node-fhir-server-core';
 const { VERSIONS } = constants;
-import logger from './logger';
 import app from './app';
+import logger from './logger';
 
 const port = app.get('port');
 
