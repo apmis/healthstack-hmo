@@ -7,6 +7,7 @@
         "John Alade <topzy20@gmail.com>"
     ],
     "dependencies": {
+        "@ahryman40k/ts-fhir-types": "^4.0.34",
         "@asymmetrik/node-fhir-server-core": "^2.2.3",
         "@feathersjs/configuration": "^4.5.11",
         "@feathersjs/express": "^4.5.11",
@@ -35,7 +36,8 @@
         "start-dev": "nodemon",
         "build": "rm -rf ./build && tsc -p tsconfig.json",
         "lint": "eslint src --ext .ts",
-        "lint:fix": "npm run lint -- --fix"
+        "lint:fix": "npm run lint -- --fix",
+        "watch": "tsc --watch"
     },
     "husky": {
         "hooks": {
@@ -44,5 +46,10 @@
     },
     "lint-staged": {
         "src/**/*.+(js,ts)": "yarn lint"
+    },
+    "nodemonConfig": {
+        "watch": ["src"],
+        "ext": "ts,json",
+        "exec": "yarn lint && yarn build && ts-node ./src/index.ts "
     }
 }

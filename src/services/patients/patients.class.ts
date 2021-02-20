@@ -1,25 +1,27 @@
-import {
-  initialize,
-  loggers,
-  constants,
-} from '@asymmetrik/node-fhir-server-core';
-const { VERSIONS } = constants;
+import createModel from '../../models/patients.model';
 
 import { MongoDBServiceOptions, Service } from 'feathers-mongodb';
 import { Application } from '../../declarations';
-import { constants as dbConstants } from '../../db/constants';
+import { AppConstants } from '../../db';
+import { Params } from '@feathersjs/feathers';
+import { R4 } from '@ahryman40k/ts-fhir-types';
 
-const { MONGO_CLIENT, PATIENTS_MODEL } = dbConstants;
-
-export class Patients extends Service {
+type Patient = R4.IPatient;
+export class Patients extends Service<Patient> {
   constructor(options: Partial<MongoDBServiceOptions>, app: Application) {
     super(options);
-    console.log({ MONGO_CLIENT });
     app
-      .get(MONGO_CLIENT)
-      .then((conn) => {
-        this.Model = conn.db('feathers').collection('patients');
+      .get(AppConstants.MONGO_CLIENT)
+      .then((conn: any) => {
+        this.Model = createModel(conn);
       })
       .catch((err) => console.error(err));
+  }
+  create(data: Patient, params?: Params): Promise<Patient | Patient[]> {
+    const { name } = data;
+    const userData = {
+      name,
+    };
+    return super.create(userData, params);
   }
 }

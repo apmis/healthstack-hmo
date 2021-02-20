@@ -1,6 +1,5 @@
 {
     "host": "localhost",
-    "port": 3000,
     "public": "../public/",
     "paginate": {
         "default": 10,
@@ -34,7 +33,5 @@
                 "secret": "82b98e3f83dc4c405233670ff676cf3cd460c2ab"
             }
         }
-    },
-    "nedb": "../data",
-    "mongoDBUrl": "mongodb://localhost:27017/feathers"
+    }
 }

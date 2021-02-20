@@ -1,12 +1,14 @@
 import { resolveSchema } from '@asymmetrik/node-fhir-server-core';
 import app from '../app';
+import { ServiceNames } from '../db';
 import { Dictionary } from '../types';
+import { BundleEntryShema, BundleSchema, PatientSchema } from './schema';
 
-export const search = async (args, context) => {
-  const patientsService = app.service('patients');
-  const Patient = resolveSchema(args.base_version, 'patient');
-  const Bundle = resolveSchema(args.base_version, 'bundle');
-  const BundleEntry = resolveSchema(args.base_version, 'bundleentry');
+export const search = async (args: any, context: any) => {
+  const patientsService = app.service(ServiceNames.Patients);
+  const Patient = PatientSchema(args.base_version);
+  const Bundle = BundleSchema(args.base_version);
+  const BundleEntry = BundleEntryShema(args.base_version);
   // You will need to build your query based on the sanitized args
   const query = {}; // myCustomQueryBuilder(args);
   let results: Dictionary[] = [];

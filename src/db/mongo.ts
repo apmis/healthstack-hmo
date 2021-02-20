@@ -1,9 +1,10 @@
 import { MongoClient } from 'mongodb';
 import { Application } from '../declarations';
-import { constants } from './constants';
+import { AppConstants } from '../constants';
 
 export default (app: Application): void => {
-  const dbUrl = app.get('mongoDBUrl');
+  const { MONGO_CLIENT, MONGODB_URL } = AppConstants;
+  const dbUrl = app.get(MONGODB_URL);
   const client = MongoClient.connect(dbUrl);
-  app.set(constants.MONGO_CLIENT, client);
+  app.set(MONGO_CLIENT, client);
 };
