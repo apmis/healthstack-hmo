@@ -30,8 +30,5 @@ fhirServer.listen(port, () => {
     app.get('host'),
     port
   );
+  fhirLogger.log('Started FHIR server');
 });
-
-// fhirServer.on('listening', () =>
-//   fhirLogger.info('Starting the FHIR Server on http://%s:%d', app.get('host'), port)
-// );
