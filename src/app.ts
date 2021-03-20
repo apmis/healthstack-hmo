@@ -6,12 +6,12 @@ import socketio from '@feathersjs/socketio';
 import compress from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
+import mongoose from 'mongoose';
 import path from 'path';
 import favicon from 'serve-favicon';
 
 import appHooks from './app.hooks';
 import channels from './channels';
-import mongo from './db/mongo';
 import { Application } from './declarations';
 import logger from './logger';
 import middleware from './middleware';
@@ -45,7 +45,12 @@ app.configure(express.rest());
 app.configure(socketio());
 
 //Setup DB
-app.configure(mongo);
+//app.configure(mongo);
+mongoose.Promise = global.Promise;
+void mongoose.connect('mongodb://localhost:27017/feathers', {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+});
 
 // Configure other middleware (see `middleware/index.ts`)
 app.configure(middleware);

@@ -16,6 +16,10 @@ Health Management Organisation ERP management application, also exposes fhir API
 - Run application
 `yarn run env-cmd yarn start-dev`
 
+###
+Quick to note
+- There is a conflicts between the naming of the compiled mogoose Schema and Fhir resources, for instance, naming the Patients Mongoose Patient Schema(Document) as `patients` conflicts with the Fhir resource `schema`, currently we give the singular name to the mongooose document while plural is assigned to the fhir resource schema to avoid this conflict 
+
 
 
 

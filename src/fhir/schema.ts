@@ -1,7 +1,12 @@
 import { resolveSchema } from '@asymmetrik/node-fhir-server-core';
 
-const PatientSchema = (version) => resolveSchema(version, 'patient');
-const BundleSchema = (version) => resolveSchema(version, 'bundle');
-const BundleEntryShema = (version) => resolveSchema(version, 'bundleentry');
+import { FhirModel } from '../db';
+
+const PatientSchema = (version: string): any =>
+  resolveSchema(version, FhirModel.Patient);
+const BundleSchema = (version: string): any =>
+  resolveSchema(version, FhirModel.Bundle);
+const BundleEntryShema = (version: string): any =>
+  resolveSchema(version, FhirModel.BundleEntry);
 
 export { BundleEntryShema, BundleSchema, PatientSchema };

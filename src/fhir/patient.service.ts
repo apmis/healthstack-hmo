@@ -1,12 +1,11 @@
-import { resolveSchema } from '@asymmetrik/node-fhir-server-core';
-
 import app from '../app';
-import { ServiceNames } from '../db';
+import { ServiceName } from '../db';
 import { Dictionary } from '../types';
 import { BundleEntryShema, BundleSchema, PatientSchema } from './schema';
 
-export const search = async (args: any, context: any) => {
-  const patientsService = app.service(ServiceNames.Patients);
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export const search = async (args: any) => {
+  const patientsService = app.service(ServiceName.Patient);
   const Patient = PatientSchema(args.base_version);
   const Bundle = BundleSchema(args.base_version);
   const BundleEntry = BundleEntryShema(args.base_version);

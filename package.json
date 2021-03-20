@@ -13,13 +13,18 @@
         "@feathersjs/express": "^4.5.11",
         "@feathersjs/feathers": "^4.5.11",
         "@feathersjs/socketio": "^4.5.11",
-        "feathers-mongodb": "^6.3.0",
-        "mongodb": "^3.6.4"
+        "feathers-mongoose": "^8.3.1",
+        "moment": "^2.29.1",
+        "mongodb": "3.6.3",
+        "mongoose": "5.11.15"
     },
     "devDependencies": {
+        "@types/chai": "^4.2.15",
+        "@types/mocha": "^8.2.1",
         "@types/node": "^14.14.27",
         "@typescript-eslint/eslint-plugin": "^4.15.0",
         "@typescript-eslint/parser": "^4.15.0",
+        "chai": "^4.3.3",
         "env-cmd": "^10.1.0",
         "eslint": "^7.20.0",
         "eslint-config-prettier": "^7.2.0",
@@ -27,6 +32,7 @@
         "eslint-plugin-simple-import-sort": "^7.0.0",
         "husky": "^5.0.9",
         "lint-staged": "^10.5.4",
+        "mocha": "^8.3.1",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1",
         "ts-node": "^9.1.1",
@@ -38,7 +44,8 @@
         "build": "rm -rf ./build && tsc -p tsconfig.json",
         "lint": "eslint src --ext .ts",
         "lint:fix": "npm run lint -- --fix",
-        "watch": "tsc --watch"
+        "watch": "tsc --watch",
+        "test": "mocha -r ts-node/register tests/**/*.spec.ts --exit"
     },
     "husky": {
         "hooks": {
@@ -50,9 +57,10 @@
     },
     "nodemonConfig": {
         "watch": [
-            "src"
+            "src",
+            "build"
         ],
         "ext": "ts,json",
-        "exec": "yarn lint && yarn build && ts-node ./src/index.ts "
+        "exec": "yarn lint && ts-node ./src/index.ts "
     }
 }

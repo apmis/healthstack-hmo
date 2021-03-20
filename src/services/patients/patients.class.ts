@@ -1,27 +1,21 @@
-import { R4 } from '@ahryman40k/ts-fhir-types';
 import { Params } from '@feathersjs/feathers';
-import { MongoDBServiceOptions, Service } from 'feathers-mongodb';
+import { MongooseServiceOptions, Service } from 'feathers-mongoose';
 
 import { AppConstants } from '../../db';
 import { Application } from '../../declarations';
-import createModel from '../../models/patients.model';
+import { Patient } from '../../models/patients.model';
+import { Patient as PatientDB } from '../../mongoose/schema';
 
-type Patient = R4.IPatient;
-export class Patients extends Service<Patient> {
-  constructor(options: Partial<MongoDBServiceOptions>, app: Application) {
-    super(options);
-    app
-      .get(AppConstants.MONGO_CLIENT)
-      .then((conn: any) => {
-        this.Model = createModel(conn);
-      })
-      .catch((err) => console.error(err));
+export class PatientServiceClass extends Service<Patient> {
+  constructor(options: Partial<MongooseServiceOptions>, app: Application) {
+    super({
+      ...options,
+      paginate: app.get(AppConstants.Paginate),
+      Model: PatientDB,
+    });
   }
-  create(data: Patient, params?: Params): Promise<Patient | Patient[]> {
-    const { name } = data;
-    const userData = {
-      name,
-    };
-    return super.create(userData, params);
+  create(patient: Patient, params?: Params): Promise<Patient | Patient[]> {
+    const response = super.create(patient, params);
+    return response;
   }
 }

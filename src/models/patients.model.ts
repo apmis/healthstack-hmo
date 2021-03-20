@@ -1,7 +1,3 @@
-import { DBConstants, ModelNames } from '../db';
-import { MongoConnection } from '../types';
+import { R4 } from '@ahryman40k/ts-fhir-types';
 
-export default function (conn: MongoConnection): any {
-  const Model = conn.db(DBConstants.DB_NAME).collection(ModelNames.Patients);
-  return Model;
-}
+export type Patient = R4.IPatient & Document;
