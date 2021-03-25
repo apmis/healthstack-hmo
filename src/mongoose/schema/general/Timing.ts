@@ -1,4 +1,4 @@
-import { fromTimingFhir } from '../../converters/R4';
+import { fromTimingFhir } from '../../converters/from';
 import Fields from '../Fields';
 import {
   CodeableConceptSchema,

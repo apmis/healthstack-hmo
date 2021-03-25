@@ -14,6 +14,7 @@ const StringData = '$*(nwnjkwev232423m2348234*(@#';
 const StringUrl = 'http://www.example.com';
 const StringHash = 'wvwwevwevwerr23423v';
 const StringSystem = 'unknown';
+const StringBase64 = 'SGVsbG8=';
 const StringCode = 'NG_12345';
 const StringDisplay = 'unknown';
 const StringVersion = '1.0';
@@ -59,6 +60,7 @@ export {
   IntegerZero,
   MarkDown,
   StringAddressLine,
+  StringBase64,
   StringChar,
   StringCity,
   StringCode,

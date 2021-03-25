@@ -1,4 +1,4 @@
-import { fromDurationFhir } from '../../converters/R4';
+import { fromDurationFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { DurationSchema } from '../headers';
 import QuantitySchema from './Quantity';

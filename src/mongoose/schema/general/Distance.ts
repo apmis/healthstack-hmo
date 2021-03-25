@@ -1,4 +1,4 @@
-import { fromDistanceFhir } from '../../converters/R4';
+import { fromDistanceFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { DistanceSchema } from '../headers';
 import QuantitySchema from './Quantity';

@@ -1,4 +1,4 @@
-import { fromPrimitiveCanonicalFhir } from '../../converters/R4';
+import { fromPrimitiveCanonicalFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitiveCanonicalSchema } from '../headers';
 import PrimitiveUriSchema from './PrimitiveUri';

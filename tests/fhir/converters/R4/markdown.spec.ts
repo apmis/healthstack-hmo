@@ -3,7 +3,7 @@ import 'mocha';
 import { R4 } from '@ahryman40k/ts-fhir-types';
 import { expect } from 'chai';
 
-import { fromPrimitiveMarkdownFhir } from '../../../../src/mongoose/converters/R4';
+import { fromPrimitiveMarkdownFhir } from '../../../../src/mongoose/converters/from';
 import { IPrimitiveMarkdown } from '../../../../src/mongoose/rtti/common';
 import { Elements, Primitives } from '../../stubs';
 

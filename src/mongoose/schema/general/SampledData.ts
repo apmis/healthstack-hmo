@@ -1,4 +1,4 @@
-import { fromSampledDataFhir } from '../../converters/R4';
+import { fromSampledDataFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

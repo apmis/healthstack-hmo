@@ -1,4 +1,4 @@
-import { fromAgeFhir } from '../../converters/R4';
+import { fromAgeFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { AgeSchema } from '../headers';
 import QuantitySchema from './Quantity';

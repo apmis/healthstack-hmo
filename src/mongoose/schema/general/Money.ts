@@ -1,4 +1,4 @@
-import { fromMoneyFhir } from '../../converters/R4';
+import { fromMoneyFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

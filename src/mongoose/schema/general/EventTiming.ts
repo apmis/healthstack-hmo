@@ -1,4 +1,4 @@
-import { fromEventTimingFhir } from '../../converters/R4';
+import { fromEventTimingFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { EventTimingSchema } from '../headers';

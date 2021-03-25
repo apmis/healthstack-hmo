@@ -3,7 +3,7 @@ import 'mocha';
 import { R4 } from '@ahryman40k/ts-fhir-types';
 import { expect } from 'chai';
 
-import { fromAgeFhir } from '../../../../src/mongoose/converters/R4';
+import { fromAgeFhir } from '../../../../src/mongoose/converters/from';
 import { Elements, Primitives } from '../../stubs';
 
 describe('Age FHIR JSON to Mongo BSON Converters', () => {

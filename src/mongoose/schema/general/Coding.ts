@@ -1,4 +1,4 @@
-import { fromCodingFhir } from '../../converters/R4';
+import { fromCodingFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

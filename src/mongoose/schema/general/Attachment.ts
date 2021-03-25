@@ -1,4 +1,4 @@
-import { fromAttachmentFhir } from '../../converters/R4';
+import { fromAttachmentFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

@@ -1,4 +1,4 @@
-import { fromIdentifierUseFhir } from '../../converters/R4';
+import { fromIdentifierUseFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { IdentifierUseSchema } from '../headers';

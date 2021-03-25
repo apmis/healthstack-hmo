@@ -1,4 +1,4 @@
-import { fromPeriodFhir } from '../../converters/R4';
+import { fromPeriodFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PeriodSchema, PrimitiveDateTimeSchema } from '../headers';

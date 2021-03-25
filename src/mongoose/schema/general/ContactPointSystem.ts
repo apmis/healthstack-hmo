@@ -1,4 +1,4 @@
-import { fromContactPointSystemFhir } from '../../converters/R4';
+import { fromContactPointSystemFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { ContactPointSystemSchema } from '../headers';

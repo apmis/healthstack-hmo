@@ -1,4 +1,4 @@
-import { fromCountFhir } from '../../converters/R4';
+import { fromCountFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { CountSchema, QuantitySchema } from '../headers';
 

@@ -7,5 +7,5 @@ export interface CommonModel extends Model<CommonDocument> {
 }
 
 export interface PrimitiveElementModel extends Model<PrimitiveElementDocument> {
-  parseR4: (value?: any, element?: any) => PrimitiveElementDocument;
+  parseR4: (value?: any, element?: any) => any;
 }

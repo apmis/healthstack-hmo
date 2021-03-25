@@ -1,4 +1,4 @@
-import { fromIdentifierFhir } from '../../converters/R4';
+import { fromIdentifierFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

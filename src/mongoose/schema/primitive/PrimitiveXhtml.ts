@@ -1,4 +1,4 @@
-import { fromPrimitiveXhtmlFhir } from '../../converters/R4';
+import { fromPrimitiveXhtmlFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveXhtmlSchema } from '../headers';

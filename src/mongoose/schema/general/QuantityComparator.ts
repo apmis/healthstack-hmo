@@ -1,4 +1,4 @@
-import { fromQuantityComparatorFhir } from '../../converters/R4';
+import { fromQuantityComparatorFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { QuantityComparatorSchema } from '../headers';

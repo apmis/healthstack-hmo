@@ -1,4 +1,4 @@
-import { fromPrimitiveMarkdownFhir } from '../../converters/R4';
+import { fromPrimitiveMarkdownFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitiveMarkdownSchema } from '../headers';
 import PrimitiveStringSchema from './PrimitiveString';

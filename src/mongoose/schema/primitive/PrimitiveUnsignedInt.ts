@@ -1,4 +1,4 @@
-import { fromPrimitiveUnsignedIntFhir } from '../../converters/R4';
+import { fromPrimitiveUnsignedIntFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitiveUnsignedIntSchema } from '../headers';
 import PrimitiveIntegerSchema from './PrimitiveInteger';

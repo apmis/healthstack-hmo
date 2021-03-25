@@ -3,7 +3,7 @@ import 'mocha';
 import { R4 } from '@ahryman40k/ts-fhir-types';
 import { expect } from 'chai';
 
-import { fromPatientFhir } from '../../../../../src/mongoose/converters/R4';
+import { fromPatientFhir } from '../../../../../src/mongoose/converters/from';
 import { Primitives, Resource } from '../../../stubs';
 
 describe('Patient FHIR JSON to Mongo BSON Converters', () => {

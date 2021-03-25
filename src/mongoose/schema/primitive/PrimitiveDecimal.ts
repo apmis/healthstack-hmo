@@ -1,4 +1,4 @@
-import { fromPrimitiveDecimalFhir } from '../../converters/R4';
+import { fromPrimitiveDecimalFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveDecimalSchema } from '../headers';

@@ -1,4 +1,4 @@
-import { fromQuantityFhir } from '../../converters/R4';
+import { fromQuantityFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

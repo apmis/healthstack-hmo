@@ -1,4 +1,4 @@
-import { fromSimpleQuantityFhir } from '../../converters/R4';
+import { fromSimpleQuantityFhir } from '../../converters/from';
 import Fields from '../Fields';
 import {
   PrimitiveCodeSchema,

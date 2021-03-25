@@ -1,4 +1,4 @@
-import { fromSignatureFhir } from '../../converters/R4';
+import { fromSignatureFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

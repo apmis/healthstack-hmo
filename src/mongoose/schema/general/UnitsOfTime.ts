@@ -1,4 +1,4 @@
-import { fromUnitOfTimeFhir } from '../../converters/R4';
+import { fromUnitOfTimeFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { UnitsOfTimeSchema } from '../headers';

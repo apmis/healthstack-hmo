@@ -1,4 +1,4 @@
-import { fromAddressFhir } from '../../converters/R4';
+import { fromAddressFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

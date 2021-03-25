@@ -1,4 +1,4 @@
-import { fromRangeFhir } from '../../converters/R4';
+import { fromRangeFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { RangeSchema, SimpleQuantitySchema } from '../headers';

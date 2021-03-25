@@ -1,4 +1,4 @@
-import { fromPrimitiveBase64BinaryFhir } from '../../converters/R4';
+import { fromPrimitiveBase64BinaryFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveBase64BinarySchema } from '../headers';

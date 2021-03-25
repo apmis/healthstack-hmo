@@ -1,4 +1,4 @@
-import { fromAnnotationFhir } from '../../converters/R4';
+import { fromAnnotationFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

@@ -1,4 +1,4 @@
-import { fromPrimitiveBooleanFhir } from '../../converters/R4';
+import { fromPrimitiveBooleanFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveBooleanSchema } from '../headers';

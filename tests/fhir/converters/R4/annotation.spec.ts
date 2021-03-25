@@ -4,7 +4,7 @@ import { R4 } from '@ahryman40k/ts-fhir-types';
 import { IAnnotation } from '@ahryman40k/ts-fhir-types/lib/R4';
 import { expect } from 'chai';
 
-import { fromAnnotationFhir } from '../../../../src/mongoose/converters/R4';
+import { fromAnnotationFhir } from '../../../../src/mongoose/converters/from';
 import { Elements, Primitives } from '../../stubs';
 
 describe('Annotation FHIR JSON to Mongo BSON Converters', () => {

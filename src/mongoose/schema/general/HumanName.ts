@@ -1,4 +1,4 @@
-import { fromHumanNameFhir } from '../../converters/R4';
+import { fromHumanNameFhir } from '../../converters/from';
 import Fields from '../Fields';
 import {
   ElementSchema,

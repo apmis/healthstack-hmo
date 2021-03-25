@@ -1,4 +1,4 @@
-import { fromPrimitivePositiveIntFhir } from '../../converters/R4';
+import { fromPrimitivePositiveIntFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitivePositiveIntSchema } from '../headers';
 import PrimitiveIntegerSchema from './PrimitiveInteger';

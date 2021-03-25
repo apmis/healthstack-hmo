@@ -1,4 +1,4 @@
-import { fromPrimitiveTimeFhir } from '../../converters/R4';
+import { fromPrimitiveTimeFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveTimeSchema } from '../headers';

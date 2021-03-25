@@ -1,4 +1,4 @@
-import { fromPrimitiveUuidFhir } from '../../converters/R4';
+import { fromPrimitiveUuidFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitiveUuidSchema } from '../headers';
 import PrimitiveUriSchema from './PrimitiveUri';

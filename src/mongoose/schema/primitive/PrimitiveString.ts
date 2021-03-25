@@ -1,4 +1,4 @@
-import { fromPrimitiveStringFhir } from '../../converters/R4';
+import { fromPrimitiveStringFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveStringSchema } from '../headers';

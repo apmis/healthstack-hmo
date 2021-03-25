@@ -1,4 +1,4 @@
-import { fromPrimitiveCodeFhir } from '../../converters/R4';
+import { fromPrimitiveCodeFhir } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitiveCodeSchema, PrimitiveStringSchema } from '../headers';
 

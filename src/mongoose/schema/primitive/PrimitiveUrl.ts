@@ -1,4 +1,4 @@
-import { fromPrimitiveUrlSchema } from '../../converters/R4';
+import { fromPrimitiveUrlSchema } from '../../converters/from';
 import Fields from '../Fields';
 import { PrimitiveUrlSchema } from '../headers';
 import PrimitiveUriSchema from './PrimitiveUri';

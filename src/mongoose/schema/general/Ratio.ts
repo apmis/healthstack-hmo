@@ -1,4 +1,4 @@
-import { fromRatioFhir } from '../../converters/R4';
+import { fromRatioFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { QuantitySchema, RatioSchema } from '../headers';

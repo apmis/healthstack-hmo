@@ -1,4 +1,4 @@
-import { fromPrimitiveUriFhir } from '../../converters/R4';
+import { fromPrimitiveUriFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { PrimitiveUriSchema } from '../headers';

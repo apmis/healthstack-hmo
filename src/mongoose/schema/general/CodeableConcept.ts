@@ -1,4 +1,4 @@
-import { fromCodeableConceptFhir } from '../../converters/R4';
+import { fromCodeableConceptFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import {

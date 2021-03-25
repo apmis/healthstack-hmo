@@ -1,4 +1,4 @@
-import { fromDayOfWeekFhir } from '../../converters/R4';
+import { fromDayOfWeekFhir } from '../../converters/from';
 import ElementSchema from '../Element';
 import Fields from '../Fields';
 import { DayOfWeekSchema } from '../headers';
